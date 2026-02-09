@@ -7,7 +7,6 @@
 
 ## Table of Contents
 
-- [Preflight checklist](#preflight-checklist)
 - [Part 1 - Starting a project using PyO3](#part-1---starting-a-project-using-pyo3)
   - [What is PyO3?](#what-is-pyo3)
   - [Setting up](#setting-up)
