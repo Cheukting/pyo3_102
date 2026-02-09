@@ -5,6 +5,35 @@
 - Install/ Update Rust (Requires Rust 1.83 or greater.)
 - Install [uv](https://docs.astral.sh/uv/)
 
+## Table of Contents
+
+- [Preflight checklist](#preflight-checklist)
+- [Part 1 - Starting a project using PyO3](#part-1---starting-a-project-using-pyo3)
+  - [What is PyO3?](#what-is-pyo3)
+  - [Setting up](#setting-up)
+  - [What is maturin?](#what-is-maturin)
+  - [Build a Python library](#build-a-python-library)
+  - [What's in a Python package?](#whats-in-a-python-package)
+  - [Publishing Python packages](#publishing-python-packages)
+- [Part 2 - Creating Python module and function with PyO3](#part-2---creating-python-module-and-function-with-pyo3)
+  - [Mixing a Python and a Rust project](#mixing-a-python-and-a-rust-project)
+  - [Throwing Python exceptions](#throwing-python-exceptions)
+  - [Creating documentation and function signatures](#creating-documentation-and-function-signatures)
+  - [Exercise - Creating a D&D Python module](#exercise---creating-a-dd-python-module)
+- [Part 3 - Type Conversions between Rust and Python](#part-3---type-conversions-between-rust-and-python)
+  - [Using Rust types or Python-native types as arguments](#using-rust-types-or-python-native-types-as-arguments)
+  - [Returning Rust values to Python](#returning-rust-values-to-python)
+  - [Creating Custom Python classes](#creating-custom-python-classes)
+  - [Exercise - Expanding your D&D Python module](#exercise---expanding-your-dd-python-module)
+- [Part 4 - Considering the Python Global Interpreter Lock (GIL)](#part-4---considering-the-python-global-interpreter-lock-gil)
+  - [What is a Global Interpreter Lock (GIL) in Python?](#what-is-a-global-interpreter-lock-gil-in-python)
+  - [How to use PyO3 with the free-threaded Python build?](#how-to-use-pyo3-with-the-free-threaded-python-build)
+  - [Attaching and detaching to the runtime](#attaching-and-detaching-to-the-runtime)
+  - [Making mutable PyClass threadsafe](#making-mutable-pyclass-threadsafe)
+  - [Exercise - Making your D&D Python module free-threaded compatible](#exercise---making-your-dd-python-module-free-threaded-compatible)
+- [Reference](#reference)
+- [Support this workshop](#support-this-workshop)
+
 ## Part 1 - Starting a project using PyO3 
 
 ### What is PyO3?
