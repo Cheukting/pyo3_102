@@ -476,6 +476,12 @@ This is the end of the workshop, there are much more in the usage of PyO3, howev
 
 ---
 
+![Help me to understand.png](Help%20me%20to%20understand.png)
+
+Please help me to understand toolchain needs for Rust and Python by filling out this [short survey](https://forms.gle/gxqjVa5dKsGgsRVf9)!
+
+---
+
 ## Support this workshop
 
 This workshop is created by Cheuk and is open source for everyone to use (under MIT license). Please consider sponsoring Cheuk's work via [GitHub Sponsor](https://github.com/sponsors/Cheukting).
